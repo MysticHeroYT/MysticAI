@@ -4,50 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Updated the title to reflect the MysticAI theme -->
-    <title>MysticAI Web Chat</title>
-    <!-- Font Awesome for the send button icon -->
+    <title>MysticAI</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!-- Tailwind CSS for styling -->
+    <!--Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Using a custom font for a mystical feel */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 </head>
 
-<!-- Updated the body background to a deep, mystical purple -->
-<body class="m-0 p-0 bg-[#1B0C3C]">
-    <!-- Header with updated text and colors -->
+<body class="m-0 p-0 bg-[#3A3960]">
     <div
-        class="header w-[100%] flex items-center justify-center text-[#B9B4E3] border-b-[1px] border-solid border-[#5E597F] h-[45px]">
+        class="header w-[100%] flex items-center justify-center text-[#FAFFC5] border-b-[1px] border-solid border-[#FAFFC5] h-[45px]">
         <h3 class="text-[17px] font-[500]">MysticAI</h3>
     </div>
-    <!-- Main container for the chat interface -->
     <div class="container max-w-[920px] h-[93vh] flex flex-col justify-between my-0 mx-auto">
 
-        <!-- Chat log area -->
         <div class="chat-container flex-1">
-            <div id="chat-log" class="mb-[10px] text-[#FAFAFA] rounded-[5px]"></div>
+            <div id="chat-log" class="mb-[10px] text-white rounded-[5px]"></div>
         </div>
-        <!-- Input container with updated colors and rounded corners -->
         <div
-            class="input-container bg-[#1B0C3C] p-[10px] flex justify-between border-t-[1px] border-solid border-[#5E597F] sticky bottom-0">
-            <!-- User input field with rounded corners and subtle background -->
-            <input type="text" id="user-input" placeholder="Type your message here..."
-                class="flex-1 rounded-md px-4 py-2 bg-[#2D204A] text-white focus:outline-none focus:ring-2 focus:ring-[#B9B4E3]">
-            <!-- Send button with new color and hover effect -->
+            class="input-container bg-[#3A3960] p-[10px] flex justify-between border-t-[1px] border-solid border-[#5c5c66] sticky b-0">
+            <input type="text" id="user-input" placeholder="Type your message here...">
             <button id="send-button"
-                class="flex items-center justify-center px-[20px] py-[8px] border-none rounded-[5px] bg-[#A1A0C1] text-[#1B0C3C] font-semibold ml-[15px] cursor-pointer hover:bg-[#B9B4E3] transition-colors duration-200">
+                class="flex items-center justify-center px-[20px] py-[8px] border-none rounded-[5px] bg-[#118B50] text-white pointer ml-[15px]">
                 <i class="fa-solid fa-paper-plane" id="button-icon"></i>
             </button>
         </div>
     </div>
-    <!-- The script file is not included as it was a separate file and not part of the request. -->
+    <script src="./script.js"></script>
 </body>
 
 </html>
